@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\",
+  "WorkspaceRootPath": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\karisma cg\\cg dev\\vleague 2025\\vleague\\src\\menu\\frmtactical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmtactical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\karisma cg\\cg dev\\vleague 2025\\vleague\\src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\config\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\config\\dbconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\phungphongdev\\vleague2025-2.0\\src\\menu\\frmkarismamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmkarismamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\phungphongdev\\vleague2025-2.0\\src\\menu\\frmkarismamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmkarismamenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\phungphongdev\\vleague2025-2.0\\myeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:myeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|d:\\phungphongdev\\vleague2025-2.0\\src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9AE2620-8E23-446D-B5F1-15D87F91C1EA}|VLeague.csproj|solutionrelative:src\\menu\\frmdataimport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,61 +30,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmTactical.cs",
-              "DocumentMoniker": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmTactical.cs",
-              "RelativeDocumentMoniker": "src\\menu\\FrmTactical.cs",
-              "ToolTip": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmTactical.cs",
-              "RelativeToolTip": "src\\menu\\FrmTactical.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T06:36:51.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DBConfig.cs",
-              "DocumentMoniker": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\config\\DBConfig.cs",
-              "RelativeDocumentMoniker": "src\\config\\DBConfig.cs",
-              "ToolTip": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\config\\DBConfig.cs",
-              "RelativeToolTip": "src\\config\\DBConfig.cs",
-              "ViewState": "AQIAABgBAAAAAAAAAAAQwDUBAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T02:19:27.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmDataImport.cs",
-              "DocumentMoniker": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmDataImport.cs",
-              "RelativeDocumentMoniker": "src\\menu\\FrmDataImport.cs",
-              "ToolTip": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmDataImport.cs",
-              "RelativeToolTip": "src\\menu\\FrmDataImport.cs",
-              "ViewState": "AQIAACYDAAAAAAAAAAA1wEMDAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T01:54:29.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmDataImport.cs [Design]",
-              "DocumentMoniker": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmDataImport.cs",
-              "RelativeDocumentMoniker": "src\\menu\\FrmDataImport.cs",
-              "ToolTip": "D:\\KARISMA CG\\CG DEV\\VLEAGUE 2025\\Vleague\\src\\menu\\FrmDataImport.cs [Design]",
-              "RelativeToolTip": "src\\menu\\FrmDataImport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T01:54:28.48Z",
-              "EditorCaption": " [Design]"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -92,7 +46,78 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyEventHandler.cs",
+              "DocumentMoniker": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\MyEventHandler.cs",
+              "RelativeDocumentMoniker": "MyEventHandler.cs",
+              "ToolTip": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\MyEventHandler.cs",
+              "RelativeToolTip": "MyEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:49:16.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmKarismaMenu.cs [Design]",
+              "DocumentMoniker": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmKarismaMenu.cs",
+              "RelativeDocumentMoniker": "src\\menu\\FrmKarismaMenu.cs",
+              "ToolTip": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmKarismaMenu.cs [Design]",
+              "RelativeToolTip": "src\\menu\\FrmKarismaMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:24:04.252Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmKarismaMenu.cs",
+              "DocumentMoniker": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmKarismaMenu.cs",
+              "RelativeDocumentMoniker": "src\\menu\\FrmKarismaMenu.cs",
+              "ToolTip": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmKarismaMenu.cs",
+              "RelativeToolTip": "src\\menu\\FrmKarismaMenu.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAvwD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T07:13:04.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmDataImport.cs",
+              "DocumentMoniker": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmDataImport.cs",
+              "RelativeDocumentMoniker": "src\\menu\\FrmDataImport.cs",
+              "ToolTip": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmDataImport.cs",
+              "RelativeToolTip": "src\\menu\\FrmDataImport.cs",
+              "ViewState": "AgIAAIICAAAAAAAAAAAvwJcCAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:54:29.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmDataImport.cs [Design]",
+              "DocumentMoniker": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmDataImport.cs",
+              "RelativeDocumentMoniker": "src\\menu\\FrmDataImport.cs",
+              "ToolTip": "D:\\PhungPhongDEV\\VLEAGUE2025-2.0\\src\\menu\\FrmDataImport.cs [Design]",
+              "RelativeToolTip": "src\\menu\\FrmDataImport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T01:54:28.48Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

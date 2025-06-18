@@ -350,3 +350,43 @@ D:\KARISMA CG\CG DEV\VLEAGUE 2025\Vleague\obj\Debug\VLeague.csproj.CoreCompileIn
 D:\KARISMA CG\CG DEV\VLEAGUE 2025\Vleague\obj\Debug\VLeague.csproj.Up2Date
 D:\KARISMA CG\CG DEV\VLEAGUE 2025\Vleague\obj\Debug\CGControl.exe
 D:\KARISMA CG\CG DEV\VLEAGUE 2025\Vleague\obj\Debug\CGControl.pdb
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\DataSet1.Designer.cs
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\CGControl.exe.config
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\CGControl.exe
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\CGControl.pdb
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\Control.Draggable.dll
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\Newtonsoft.Json.dll
+D:\PhungPhongDEV\VLEAGUE2025-2.0\bin\Debug\Newtonsoft.Json.xml
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.csproj.AssemblyReference.cache
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\Interop.K3DAsyncEngineLib.dll
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.csproj.ResolveComReference.cache
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.chaychudung.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.chaychungang.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmCupQG.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmNews.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmPlayScene.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmPostMatch.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmSettingNews.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmSponsor.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmLowerThird.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmPenalty.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmVar.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmInMatchClock.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmInMatchStatic.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmPreMatch.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmDataImport.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.FrmSetting.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.FrmKarismaMenu.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.Properties.Resources.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmTactical.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.FrmSubstitution.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.menu.NewsControl.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.model.CustomMessageBox.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.model.FrmAbout.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.model.FrmCheckLicenseKey.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.src.model.FrmOption.resources
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.csproj.GenerateResource.cache
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.csproj.CoreCompileInputs.cache
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\VLeague.csproj.Up2Date
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\CGControl.exe
+D:\PhungPhongDEV\VLEAGUE2025-2.0\obj\Debug\CGControl.pdb
