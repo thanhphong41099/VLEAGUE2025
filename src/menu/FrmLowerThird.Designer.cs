@@ -149,7 +149,7 @@
             this.homeName.Controls.Add(this.numHomeGoal6);
             this.homeName.Controls.Add(this.numHomeGoal7);
             this.homeName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.homeName.Location = new System.Drawing.Point(152, 106);
+            this.homeName.Location = new System.Drawing.Point(73, 93);
             this.homeName.Name = "homeName";
             this.homeName.Size = new System.Drawing.Size(584, 573);
             this.homeName.TabIndex = 2;
@@ -508,7 +508,7 @@
             this.awayName.Controls.Add(this.numAwayGoal6);
             this.awayName.Controls.Add(this.numAwayGoal7);
             this.awayName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.awayName.Location = new System.Drawing.Point(801, 106);
+            this.awayName.Location = new System.Drawing.Point(722, 93);
             this.awayName.Name = "awayName";
             this.awayName.Size = new System.Drawing.Size(584, 573);
             this.awayName.TabIndex = 21;
@@ -845,7 +845,7 @@
             // stopAll
             // 
             this.stopAll.Image = ((System.Drawing.Image)(resources.GetObject("stopAll.Image")));
-            this.stopAll.Location = new System.Drawing.Point(1484, 132);
+            this.stopAll.Location = new System.Drawing.Point(1405, 119);
             this.stopAll.Name = "stopAll";
             this.stopAll.Size = new System.Drawing.Size(73, 68);
             this.stopAll.TabIndex = 289;
@@ -858,7 +858,7 @@
             this.btnKickOff.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnKickOff.Image = ((System.Drawing.Image)(resources.GetObject("btnKickOff.Image")));
             this.btnKickOff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKickOff.Location = new System.Drawing.Point(590, 716);
+            this.btnKickOff.Location = new System.Drawing.Point(511, 703);
             this.btnKickOff.Name = "btnKickOff";
             this.btnKickOff.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnKickOff.Size = new System.Drawing.Size(252, 69);
@@ -871,7 +871,7 @@
             // stopKickOff
             // 
             this.stopKickOff.Image = ((System.Drawing.Image)(resources.GetObject("stopKickOff.Image")));
-            this.stopKickOff.Location = new System.Drawing.Point(867, 717);
+            this.stopKickOff.Location = new System.Drawing.Point(788, 704);
             this.stopKickOff.Name = "stopKickOff";
             this.stopKickOff.Size = new System.Drawing.Size(73, 68);
             this.stopKickOff.TabIndex = 290;
@@ -884,7 +884,7 @@
             this.timeLowerThird.ForeColor = System.Drawing.SystemColors.ControlText;
             this.timeLowerThird.Image = ((System.Drawing.Image)(resources.GetObject("timeLowerThird.Image")));
             this.timeLowerThird.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.timeLowerThird.Location = new System.Drawing.Point(152, 716);
+            this.timeLowerThird.Location = new System.Drawing.Point(73, 703);
             this.timeLowerThird.Name = "timeLowerThird";
             this.timeLowerThird.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.timeLowerThird.Size = new System.Drawing.Size(252, 69);
@@ -897,7 +897,7 @@
             // stopTimeLowerThird
             // 
             this.stopTimeLowerThird.Image = ((System.Drawing.Image)(resources.GetObject("stopTimeLowerThird.Image")));
-            this.stopTimeLowerThird.Location = new System.Drawing.Point(430, 717);
+            this.stopTimeLowerThird.Location = new System.Drawing.Point(351, 704);
             this.stopTimeLowerThird.Name = "stopTimeLowerThird";
             this.stopTimeLowerThird.Size = new System.Drawing.Size(73, 68);
             this.stopTimeLowerThird.TabIndex = 292;
@@ -910,7 +910,7 @@
             this.penaltyLowerThird.ForeColor = System.Drawing.SystemColors.ControlText;
             this.penaltyLowerThird.Image = ((System.Drawing.Image)(resources.GetObject("penaltyLowerThird.Image")));
             this.penaltyLowerThird.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.penaltyLowerThird.Location = new System.Drawing.Point(1035, 815);
+            this.penaltyLowerThird.Location = new System.Drawing.Point(956, 802);
             this.penaltyLowerThird.Name = "penaltyLowerThird";
             this.penaltyLowerThird.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.penaltyLowerThird.Size = new System.Drawing.Size(252, 69);
@@ -923,7 +923,7 @@
             // stopPenaltyLowerThird
             // 
             this.stopPenaltyLowerThird.Image = ((System.Drawing.Image)(resources.GetObject("stopPenaltyLowerThird.Image")));
-            this.stopPenaltyLowerThird.Location = new System.Drawing.Point(1313, 816);
+            this.stopPenaltyLowerThird.Location = new System.Drawing.Point(1234, 803);
             this.stopPenaltyLowerThird.Name = "stopPenaltyLowerThird";
             this.stopPenaltyLowerThird.Size = new System.Drawing.Size(73, 68);
             this.stopPenaltyLowerThird.TabIndex = 294;
@@ -937,7 +937,7 @@
             this.updateData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateData.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.updateData.ForeColor = System.Drawing.Color.White;
-            this.updateData.Location = new System.Drawing.Point(1443, 239);
+            this.updateData.Location = new System.Drawing.Point(1364, 226);
             this.updateData.Name = "updateData";
             this.updateData.Size = new System.Drawing.Size(155, 68);
             this.updateData.TabIndex = 296;
@@ -949,7 +949,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(1481, 106);
+            this.label1.Location = new System.Drawing.Point(1402, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 21);
             this.label1.TabIndex = 297;
@@ -961,7 +961,7 @@
             this.btnFullTime.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnFullTime.Image = ((System.Drawing.Image)(resources.GetObject("btnFullTime.Image")));
             this.btnFullTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFullTime.Location = new System.Drawing.Point(1035, 714);
+            this.btnFullTime.Location = new System.Drawing.Point(956, 701);
             this.btnFullTime.Name = "btnFullTime";
             this.btnFullTime.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.btnFullTime.Size = new System.Drawing.Size(252, 69);
@@ -974,7 +974,7 @@
             // stopFullTime
             // 
             this.stopFullTime.Image = ((System.Drawing.Image)(resources.GetObject("stopFullTime.Image")));
-            this.stopFullTime.Location = new System.Drawing.Point(1312, 715);
+            this.stopFullTime.Location = new System.Drawing.Point(1233, 702);
             this.stopFullTime.Name = "stopFullTime";
             this.stopFullTime.Size = new System.Drawing.Size(73, 68);
             this.stopFullTime.TabIndex = 298;
@@ -988,7 +988,7 @@
             this.clearTextBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.clearTextBox.ForeColor = System.Drawing.Color.White;
-            this.clearTextBox.Location = new System.Drawing.Point(1443, 319);
+            this.clearTextBox.Location = new System.Drawing.Point(1364, 306);
             this.clearTextBox.Name = "clearTextBox";
             this.clearTextBox.Size = new System.Drawing.Size(155, 42);
             this.clearTextBox.TabIndex = 300;
@@ -1010,7 +1010,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(586, 817);
+            this.label9.Location = new System.Drawing.Point(507, 804);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 21);
             this.label9.TabIndex = 329;
@@ -1020,7 +1020,7 @@
             // 
             this.cbbMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbMatch.FormattingEnabled = true;
-            this.cbbMatch.Location = new System.Drawing.Point(680, 814);
+            this.cbbMatch.Location = new System.Drawing.Point(601, 801);
             this.cbbMatch.Name = "cbbMatch";
             this.cbbMatch.Size = new System.Drawing.Size(259, 29);
             this.cbbMatch.TabIndex = 328;
@@ -1033,7 +1033,7 @@
             this.saveListGoalPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveListGoalPlayer.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.saveListGoalPlayer.ForeColor = System.Drawing.Color.White;
-            this.saveListGoalPlayer.Location = new System.Drawing.Point(1443, 404);
+            this.saveListGoalPlayer.Location = new System.Drawing.Point(1364, 391);
             this.saveListGoalPlayer.Name = "saveListGoalPlayer";
             this.saveListGoalPlayer.Size = new System.Drawing.Size(155, 38);
             this.saveListGoalPlayer.TabIndex = 330;

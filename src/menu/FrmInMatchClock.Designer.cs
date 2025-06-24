@@ -89,6 +89,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupHome3 = new System.Windows.Forms.GroupBox();
+            this.checkSaveHomeGoal = new System.Windows.Forms.CheckBox();
             this.homePlayerOG = new System.Windows.Forms.Button();
             this.numberlabel = new System.Windows.Forms.Label();
             this.ShowGoalHomePlayer = new System.Windows.Forms.Button();
@@ -121,6 +122,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupAway3 = new System.Windows.Forms.GroupBox();
+            this.checkSaveAwayGoal = new System.Windows.Forms.CheckBox();
             this.awayPlayerOG = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.ShowGoalAwayPlayer = new System.Windows.Forms.Button();
@@ -154,8 +156,10 @@
             this.updateData = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.stopALL = new System.Windows.Forms.Button();
-            this.checkSaveHomeGoal = new System.Windows.Forms.CheckBox();
-            this.checkSaveAwayGoal = new System.Windows.Forms.CheckBox();
+            this.checkPenHome = new System.Windows.Forms.CheckBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.checkPenAway = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -717,7 +721,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label4.Location = new System.Drawing.Point(8, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 15);
+            this.label4.Size = new System.Drawing.Size(36, 15);
             this.label4.TabIndex = 1;
             this.label4.Text = "TITLE";
             // 
@@ -920,12 +924,14 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label5.Location = new System.Drawing.Point(20, 35);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 15);
+            this.label5.Size = new System.Drawing.Size(89, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "SELECT PLAYER";
             // 
             // groupHome3
             // 
+            this.groupHome3.Controls.Add(this.label25);
+            this.groupHome3.Controls.Add(this.checkPenHome);
             this.groupHome3.Controls.Add(this.checkSaveHomeGoal);
             this.groupHome3.Controls.Add(this.homePlayerOG);
             this.groupHome3.Controls.Add(this.numberlabel);
@@ -943,6 +949,17 @@
             this.groupHome3.TabIndex = 291;
             this.groupHome3.TabStop = false;
             this.groupHome3.Text = "GOAL ID - HOME PLAYER";
+            // 
+            // checkSaveHomeGoal
+            // 
+            this.checkSaveHomeGoal.AutoSize = true;
+            this.checkSaveHomeGoal.Checked = true;
+            this.checkSaveHomeGoal.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkSaveHomeGoal.Location = new System.Drawing.Point(272, 120);
+            this.checkSaveHomeGoal.Name = "checkSaveHomeGoal";
+            this.checkSaveHomeGoal.Size = new System.Drawing.Size(15, 14);
+            this.checkSaveHomeGoal.TabIndex = 296;
+            this.checkSaveHomeGoal.UseVisualStyleBackColor = true;
             // 
             // homePlayerOG
             // 
@@ -1007,7 +1024,7 @@
             this.GoalTimeHome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GoalTimeHome.Location = new System.Drawing.Point(85, 68);
             this.GoalTimeHome.Name = "GoalTimeHome";
-            this.GoalTimeHome.Size = new System.Drawing.Size(250, 23);
+            this.GoalTimeHome.Size = new System.Drawing.Size(178, 23);
             this.GoalTimeHome.TabIndex = 4;
             // 
             // numHomeGoal
@@ -1035,7 +1052,7 @@
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label7.Location = new System.Drawing.Point(20, 71);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 15);
+            this.label7.Size = new System.Drawing.Size(34, 15);
             this.label7.TabIndex = 1;
             this.label7.Text = "TIME";
             // 
@@ -1045,7 +1062,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label8.Location = new System.Drawing.Point(20, 35);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 15);
+            this.label8.Size = new System.Drawing.Size(89, 15);
             this.label8.TabIndex = 0;
             this.label8.Text = "SELECT PLAYER";
             // 
@@ -1230,7 +1247,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label10.Location = new System.Drawing.Point(20, 47);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 15);
+            this.label10.Size = new System.Drawing.Size(89, 15);
             this.label10.TabIndex = 0;
             this.label10.Text = "SELECT PLAYER";
             // 
@@ -1337,12 +1354,14 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label12.Location = new System.Drawing.Point(20, 35);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 15);
+            this.label12.Size = new System.Drawing.Size(89, 15);
             this.label12.TabIndex = 0;
             this.label12.Text = "SELECT PLAYER";
             // 
             // groupAway3
             // 
+            this.groupAway3.Controls.Add(this.label26);
+            this.groupAway3.Controls.Add(this.checkPenAway);
             this.groupAway3.Controls.Add(this.checkSaveAwayGoal);
             this.groupAway3.Controls.Add(this.awayPlayerOG);
             this.groupAway3.Controls.Add(this.label19);
@@ -1360,6 +1379,17 @@
             this.groupAway3.TabIndex = 292;
             this.groupAway3.TabStop = false;
             this.groupAway3.Text = "GOAL ID - AWAY PLAYER";
+            // 
+            // checkSaveAwayGoal
+            // 
+            this.checkSaveAwayGoal.AutoSize = true;
+            this.checkSaveAwayGoal.Checked = true;
+            this.checkSaveAwayGoal.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkSaveAwayGoal.Location = new System.Drawing.Point(271, 122);
+            this.checkSaveAwayGoal.Name = "checkSaveAwayGoal";
+            this.checkSaveAwayGoal.Size = new System.Drawing.Size(15, 14);
+            this.checkSaveAwayGoal.TabIndex = 297;
+            this.checkSaveAwayGoal.UseVisualStyleBackColor = true;
             // 
             // awayPlayerOG
             // 
@@ -1425,7 +1455,7 @@
             this.GoalTimeAway.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GoalTimeAway.Location = new System.Drawing.Point(69, 68);
             this.GoalTimeAway.Name = "GoalTimeAway";
-            this.GoalTimeAway.Size = new System.Drawing.Size(265, 23);
+            this.GoalTimeAway.Size = new System.Drawing.Size(191, 23);
             this.GoalTimeAway.TabIndex = 4;
             // 
             // numAwayGoal
@@ -1453,7 +1483,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label13.Location = new System.Drawing.Point(20, 71);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 15);
+            this.label13.Size = new System.Drawing.Size(34, 15);
             this.label13.TabIndex = 1;
             this.label13.Text = "TIME";
             // 
@@ -1463,7 +1493,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label14.Location = new System.Drawing.Point(20, 35);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 15);
+            this.label14.Size = new System.Drawing.Size(89, 15);
             this.label14.TabIndex = 0;
             this.label14.Text = "SELECT PLAYER";
             // 
@@ -1651,7 +1681,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label16.Location = new System.Drawing.Point(20, 45);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 15);
+            this.label16.Size = new System.Drawing.Size(89, 15);
             this.label16.TabIndex = 0;
             this.label16.Text = "SELECT PLAYER";
             // 
@@ -1792,27 +1822,43 @@
             this.stopALL.UseVisualStyleBackColor = true;
             this.stopALL.Click += new System.EventHandler(this.stopALL_Click);
             // 
-            // checkSaveHomeGoal
+            // checkPenHome
             // 
-            this.checkSaveHomeGoal.AutoSize = true;
-            this.checkSaveHomeGoal.Checked = true;
-            this.checkSaveHomeGoal.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkSaveHomeGoal.Location = new System.Drawing.Point(272, 120);
-            this.checkSaveHomeGoal.Name = "checkSaveHomeGoal";
-            this.checkSaveHomeGoal.Size = new System.Drawing.Size(15, 14);
-            this.checkSaveHomeGoal.TabIndex = 296;
-            this.checkSaveHomeGoal.UseVisualStyleBackColor = true;
+            this.checkPenHome.AutoSize = true;
+            this.checkPenHome.Location = new System.Drawing.Point(272, 72);
+            this.checkPenHome.Name = "checkPenHome";
+            this.checkPenHome.Size = new System.Drawing.Size(15, 14);
+            this.checkPenHome.TabIndex = 297;
+            this.checkPenHome.UseVisualStyleBackColor = true;
             // 
-            // checkSaveAwayGoal
+            // label25
             // 
-            this.checkSaveAwayGoal.AutoSize = true;
-            this.checkSaveAwayGoal.Checked = true;
-            this.checkSaveAwayGoal.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkSaveAwayGoal.Location = new System.Drawing.Point(271, 122);
-            this.checkSaveAwayGoal.Name = "checkSaveAwayGoal";
-            this.checkSaveAwayGoal.Size = new System.Drawing.Size(15, 14);
-            this.checkSaveAwayGoal.TabIndex = 297;
-            this.checkSaveAwayGoal.UseVisualStyleBackColor = true;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label25.Location = new System.Drawing.Point(292, 72);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(46, 15);
+            this.label25.TabIndex = 298;
+            this.label25.Text = "Penalty";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label26.Location = new System.Drawing.Point(290, 72);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(46, 15);
+            this.label26.TabIndex = 300;
+            this.label26.Text = "Penalty";
+            // 
+            // checkPenAway
+            // 
+            this.checkPenAway.AutoSize = true;
+            this.checkPenAway.Location = new System.Drawing.Point(271, 72);
+            this.checkPenAway.Name = "checkPenAway";
+            this.checkPenAway.Size = new System.Drawing.Size(15, 14);
+            this.checkPenAway.TabIndex = 299;
+            this.checkPenAway.UseVisualStyleBackColor = true;
             // 
             // FrmInMatchClock
             // 
@@ -2011,5 +2057,9 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.CheckBox checkSaveHomeGoal;
         private System.Windows.Forms.CheckBox checkSaveAwayGoal;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.CheckBox checkPenHome;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.CheckBox checkPenAway;
     }
 }

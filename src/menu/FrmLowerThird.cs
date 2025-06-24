@@ -382,7 +382,7 @@ namespace VLeague.src.menu
         {
             Button clickedButton = sender as Button;
             clearTagButtonEx(clickedButton);
-            UpdateButtonState(sender as Button, 1);
+            UpdateButtonState(clickedButton, 1);
             switch (penaltyLowerThird.Tag)
             {
                 case 0:
@@ -390,9 +390,9 @@ namespace VLeague.src.menu
                     break;
                 case 1:
                     StringLT();
-                    string hiepdau = "PENALTY";
-                    FrmKarismaMenu.FrmSetting.loadKickOffGoal(TeamInfor.homeTenNgan, TeamInfor.awayTenNgan, Static.numberHomeScore, Static.numberAwayScore,
-                        TeamInfor.homeLogo, TeamInfor.awayLogo, hiepdau, goalhome1, goalhome2, goalaway1, goalaway2);
+                    string text = $"PENALTY: {Static.numberHomePen} - {Static.numberAwayPen}";
+                    FrmKarismaMenu.FrmSetting.loadLTPenalty(TeamInfor.homeTenNgan, TeamInfor.awayTenNgan, Static.numberHomeScore, Static.numberAwayScore,
+                        TeamInfor.homeLogo, TeamInfor.awayLogo, text, goalhome1, goalhome2, goalaway1, goalaway2);
                     break;
             }
         }

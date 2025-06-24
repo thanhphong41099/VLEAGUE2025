@@ -414,11 +414,9 @@ namespace VLeague
             KAObject = KAScene.GetObject("aoct1");
             KAObject.SetFaceColor(GKColor.R, GKColor.G, GKColor.B, 255);
 
-            KAObject = KAScene.GetObject("logo1");
+            KAObject = KAScene.GetObject("logo");
             KAObject.SetValue(teamLogoIn);
-            KAObject = KAScene.GetObject("logo2");
-            KAObject.SetValue(teamLogoIn);
-            KAObject = KAScene.GetObject("logo2out");
+            KAObject = KAScene.GetObject("logoout");
             KAObject.SetValue(teamLogoOut);
             KAObject = KAScene.GetObject("team");
             KAObject.SetValue(txtTeamLongName);
@@ -697,6 +695,27 @@ namespace VLeague
             Thread.Sleep(10);
             KAScenePlayer.Play(layerTSL);
         }
+        public void loadGoalPenInfo(string playerName, string teamLogoIn, string teamLogoOut, string minutes)
+        {
+            string scene = "\\ghiban.t2s";
+            string workingPath = txtWorkingFolder.Text;
+            string path = workingPath + "\\Scenes" + scene;
+            KAScene KAScene = KAEngine.LoadScene(path, scene);
+            Thread.Sleep(10);
+            KAEngine.BeginTransaction();
+            KAObject = KAScene.GetObject("name");
+            KAObject.SetValue(playerName + " - " + minutes + "' (P)");
+            KAObject = KAScene.GetObject("logo");
+            KAObject.SetValue(teamLogoIn);
+            KAObject = KAScene.GetObject("logoout");
+            KAObject.SetValue(teamLogoOut);
+
+            KAEngine.EndTransaction();
+            Thread.Sleep(10);
+            KAScenePlayer.Prepare(layerTSL, KAScene);
+            Thread.Sleep(10);
+            KAScenePlayer.Play(layerTSL);
+        }
         public void loadOGInfo(string playerName, string teamLogoIn, string teamLogoOut, string minutes)
         {
             string scene = "\\ghiban.t2s";
@@ -964,6 +983,43 @@ string homeLogo, string awayLogo, float startTime, int endTime)
             KAObject.SetValue(awayLogo);
             KAObject = KAScene.GetObject("Counter");
             KAObject.SetCounterRange(startTime, endTime);
+            KAEngine.EndTransaction();
+            Thread.Sleep(10);
+            KAScenePlayer.Prepare(layerTSL, KAScene);
+            Thread.Sleep(10);
+            KAScenePlayer.Play(layerTSL);
+        }
+        public void loadLTPenalty(string homeName, string awayName, string scoreHome, string scoreAway,
+string homeLogo, string awayLogo, string match, string goalhome1, string goalhome2, string goalaway1, string goalaway2)
+        {
+            string scene = "\\ltpenalty.t2s";
+            string workingPath = txtWorkingFolder.Text;
+            string path = workingPath + "\\Scenes" + scene;
+            KAScene KAScene = KAEngine.LoadScene(path, scene);
+            Thread.Sleep(10);
+            KAEngine.BeginTransaction();
+            KAObject = KAScene.GetObject("home");
+            KAObject.SetValue(homeName);
+            KAObject = KAScene.GetObject("away");
+            KAObject.SetValue(awayName);
+            KAObject = KAScene.GetObject("tiso1");
+            KAObject.SetValue(scoreHome);
+            KAObject = KAScene.GetObject("tiso2");
+            KAObject.SetValue(scoreAway);
+            KAObject = KAScene.GetObject("homeghiban");
+            KAObject.SetValue(goalhome1);
+            KAObject = KAScene.GetObject("awayghiban");
+            KAObject.SetValue(goalaway1);
+            KAObject = KAScene.GetObject("homeghiban2");
+            KAObject.SetValue(goalhome2);
+            KAObject = KAScene.GetObject("awayghiban2");
+            KAObject.SetValue(goalaway2);
+            KAObject = KAScene.GetObject("logohome");
+            KAObject.SetValue(homeLogo);
+            KAObject = KAScene.GetObject("logoaway");
+            KAObject.SetValue(awayLogo);
+            KAObject = KAScene.GetObject("text");
+            KAObject.SetValue(match);
             KAEngine.EndTransaction();
             Thread.Sleep(10);
             KAScenePlayer.Prepare(layerTSL, KAScene);

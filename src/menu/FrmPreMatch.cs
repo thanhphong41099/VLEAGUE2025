@@ -57,12 +57,51 @@ namespace VLeague.src.menu
                 awayTeamName.Text = TeamInfor.awayTenNgan;
                 groupHome.BackColor = TeamInfor.Player_HomeColor;
                 groupAway.BackColor = TeamInfor.Player_AwayColor;
+
+                // Xác định màu chữ dựa trên độ sáng
+                Color homeTextColor = GetContrastColor(TeamInfor.Player_HomeColor);
+                Color awayTextColor = GetContrastColor(TeamInfor.Player_AwayColor);
+
+                // Áp dụng màu chữ cho GroupBox và control con trong groupHome
+                groupHome.ForeColor = homeTextColor; // Đổi màu chữ tiêu đề GroupBox
+                foreach (Control ctrl in groupHome.Controls)
+                {
+                    if (ctrl is Label || ctrl is TextBox)
+                    {
+                        ctrl.ForeColor = homeTextColor;
+                    }
+                }
+
+                // Áp dụng màu chữ cho GroupBox và control con trong groupAway
+                groupAway.ForeColor = awayTextColor; // Đổi màu chữ tiêu đề GroupBox
+                foreach (Control ctrl in groupAway.Controls)
+                {
+                    if (ctrl is Label || ctrl is TextBox)
+                    {
+                        ctrl.ForeColor = awayTextColor;
+                    }
+                }
+
+                // Đảm bảo homeTeamName và awayTeamName có màu đúng
+                homeTeamName.ForeColor = homeTextColor;
+                awayTeamName.ForeColor = awayTextColor;
             }
             catch
             {
                 MessageBox.Show("Có lỗi xảy ra khi load dữ liệu, vui lòng LOAD DATA ở DATA IMPORT", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // Hàm tính độ sáng và trả về màu chữ phù hợp
+        private Color GetContrastColor(Color backgroundColor)
+        {
+            // Tính độ sáng (luminance)
+            double luminance = 0.299 * backgroundColor.R + 0.587 * backgroundColor.G + 0.114 * backgroundColor.B;
+
+            // Nếu màu nền sáng (L > 128), dùng chữ đen; nếu tối, dùng chữ trắng
+            return luminance > 128 ? Color.Black : Color.White;
+        }
+
         private void btnMatchID_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;

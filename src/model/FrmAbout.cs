@@ -27,15 +27,16 @@ namespace VLeague.src.model
 
 
                 txtAbout.Text = 
-                    $"Version 1.0.3. Expiration: ({expirationDate2})\n" +
+                    $"Version 1.0.4. Expiration: ({expirationDate2})\n" +
                     $"Copyright © VTVBroadcom MS.\n" +
                     $"All rights reserved http://vtvms.vn.\n\n" +
+                    $"Update on: 24/06/2025.\n\n" +
                     $"--------------------------------------------------";
             }
             catch 
             {
                 txtAbout.Text =
-                $"Version 1.0.3. Ex: No License Key\n" +
+                $"Version 1.0.4. Ex: No License Key\n" +
                 $"Copyright © VTVBroadcom MS.\n" +
                 $"All rights reserved http://vtvms.vn\n\n." +
                 $"--------------------------------------------------";

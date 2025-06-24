@@ -88,12 +88,53 @@ namespace VLeague.src.menu
                 picAwayLogo2.Image = Image.FromFile(TeamInfor.awayLogo);
                 groupHome1.BackColor = groupHome2.BackColor = groupHome3.BackColor = groupHome4.BackColor = TeamInfor.Player_HomeColor;
                 groupAway1.BackColor = groupAway2.BackColor = groupAway3.BackColor = groupAway4.BackColor = TeamInfor.Player_AwayColor;
+
+                // Xác định màu chữ dựa trên độ sáng
+                Color homeTextColor = GetContrastColor(TeamInfor.Player_HomeColor);
+                Color awayTextColor = GetContrastColor(TeamInfor.Player_AwayColor);
+
+                // Áp dụng màu chữ cho GroupBox và control con trong các group Home
+                foreach (GroupBox group in new[] { groupHome1, groupHome2, groupHome3, groupHome4 })
+                {
+                    group.ForeColor = homeTextColor; // Đổi màu chữ tiêu đề GroupBox
+                    foreach (Control ctrl in group.Controls)
+                    {
+                        if (ctrl is Label || ctrl is TextBox)
+                        {
+                            ctrl.ForeColor = homeTextColor;
+                        }
+                    }
+                }
+
+                // Áp dụng màu chữ cho GroupBox và control con trong các group Away
+                foreach (GroupBox group in new[] { groupAway1, groupAway2, groupAway3, groupAway4 })
+                {
+                    group.ForeColor = awayTextColor; // Đổi màu chữ tiêu đề GroupBox
+                    foreach (Control ctrl in group.Controls)
+                    {
+                        if (ctrl is Label || ctrl is TextBox)
+                        {
+                            ctrl.ForeColor = awayTextColor;
+                        }
+                    }
+                }
+
                 radHiep1.Checked = true;
             }
             catch
             {
                 MessageBox.Show("Có lỗi xảy ra khi load dữ liệu, vui lòng LOAD DATA ở DATA IMPORT", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        // Hàm tính độ sáng và trả về màu chữ phù hợp
+        private Color GetContrastColor(Color backgroundColor)
+        {
+            // Tính độ sáng (luminance)
+            double luminance = 0.299 * backgroundColor.R + 0.587 * backgroundColor.G + 0.114 * backgroundColor.B;
+
+            // Nếu màu nền sáng (L > 128), dùng chữ đen; nếu tối, dùng chữ trắng
+            return luminance > 128 ? Color.Black : Color.White;
         }
 
         public static void FillCbbPlayer(ComboBox comboBox, Player[] players)
@@ -562,6 +603,10 @@ namespace VLeague.src.menu
                     Static.HomeNameGoals[i, 0] = cbbHomeGoal.Text.Substring(cbbHomeGoal.Text.IndexOf(' ') + 1);
                     Static.HomeNameGoals[i, 1] = numHomeGoal.Text;
                     Static.HomeNameGoals[i, 2] = GoalTimeHome.Text + "'";
+                    if (checkPenHome.Checked)
+                    {
+                        Static.HomeNameGoals[i, 2] += " (P)";
+                    }
                     break;
                 }
             }
@@ -589,6 +634,10 @@ namespace VLeague.src.menu
                     Static.AwayNameGoals[i, 0] = cbbAwayGoal.Text.Substring(cbbAwayGoal.Text.IndexOf(' ') + 1);
                     Static.AwayNameGoals[i, 1] = numAwayGoal.Text;
                     Static.AwayNameGoals[i, 2] = GoalTimeAway.Text + "'";
+                    if (checkPenAway.Checked)
+                    {
+                        Static.AwayNameGoals[i, 2] += " (P)";
+                    }
                     break;
                 }
             }
@@ -617,17 +666,24 @@ namespace VLeague.src.menu
             }
             Button clickedButton = sender as Button;
             clearTagButtonTSL(clickedButton);
-            UpdateButtonState(sender as Button, 1);
+            UpdateButtonState(clickedButton, 1);
             switch (ShowGoalHomePlayer.Tag)
             {
                 case 0:
                     FrmKarismaMenu.FrmSetting.Resume(FrmSetting.layerTSL);
                     break;
                 case 1:
-                    FrmKarismaMenu.FrmSetting.loadGoalInfo(cbbHomeGoal.Text, TeamInfor.homeLogoIn, TeamInfor.homeLogoOut, GoalTimeHome.Text);
-                    if (checkSaveHomeGoal.Checked) // Kiểm tra checkbox trước khi lưu
+                    if (checkSaveHomeGoal.Checked)
                     {
                         SaveHomeNameGoal();
+                    }
+                    if (!checkPenHome.Checked)
+                    {
+                        FrmKarismaMenu.FrmSetting.loadGoalInfo(cbbHomeGoal.Text, TeamInfor.homeLogoIn, TeamInfor.homeLogoOut, GoalTimeHome.Text);
+                    }
+                    else
+                    {
+                        FrmKarismaMenu.FrmSetting.loadGoalPenInfo(cbbHomeGoal.Text, TeamInfor.homeLogoIn, TeamInfor.homeLogoOut, GoalTimeHome.Text);
                     }
                     break;
             }
@@ -649,19 +705,25 @@ namespace VLeague.src.menu
             }
             Button clickedButton = sender as Button;
             clearTagButtonTSL(clickedButton);
-            UpdateButtonState(sender as Button, 1);
+            UpdateButtonState(clickedButton, 1);
             switch (ShowGoalAwayPlayer.Tag)
             {
                 case 0:
                     FrmKarismaMenu.FrmSetting.Resume(FrmSetting.layerTSL);
                     break;
                 case 1:
-                    
-                    if (checkSaveAwayGoal.Checked) // Kiểm tra checkbox trước khi lưu
+                    if (checkSaveAwayGoal.Checked)
                     {
                         SaveAwayNameGoal();
                     }
-                    FrmKarismaMenu.FrmSetting.loadGoalInfo(cbbAwayGoal.Text, TeamInfor.awayLogoIn, TeamInfor.awayLogoOut, GoalTimeAway.Text);
+                    if (checkPenAway.Checked)
+                    {
+                        FrmKarismaMenu.FrmSetting.loadGoalPenInfo(cbbAwayGoal.Text, TeamInfor.awayLogoIn, TeamInfor.awayLogoOut, GoalTimeAway.Text);
+                    }
+                    else
+                    {
+                        FrmKarismaMenu.FrmSetting.loadGoalInfo(cbbAwayGoal.Text, TeamInfor.awayLogoIn, TeamInfor.awayLogoOut, GoalTimeAway.Text);
+                    }
                     break;
             }
         }

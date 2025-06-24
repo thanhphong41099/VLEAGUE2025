@@ -53,7 +53,9 @@ namespace VLeague.src.menu
                 }
                 DBConfig.matchingTacticalCombobox(cbbAwayTactic);
                 DBConfig.matchingTacticalCombobox(cbbHomeTactic);
-                    
+                cbbHomeTactic.SelectedIndex = 0;
+                cbbAwayTactic.SelectedIndex = 0;
+
             }
             catch (Exception ex)
             {
@@ -673,6 +675,8 @@ namespace VLeague.src.menu
             awayCode, awayTactical, awayTenDai, awayTenNgan, awayHLV, awayLogo,
          Player_HomeColor.BackColor, Player_AwayColor.BackColor, homeLogoIn, homeLogoOut, awayLogoIn, awayLogoOut,
          GK_HomeColor.BackColor, GK_AwayColor.BackColor);
+            Static.AwayNameGoals = new string[10, 3];
+            Static.HomeNameGoals = new string[10, 3];
 
             labelStatus.Text = "OK!";
             labelTimeUpdated.Text = DateTime.Now.ToString("hh:mm:ss tt");

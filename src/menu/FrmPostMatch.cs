@@ -112,7 +112,8 @@ namespace VLeague.src.menu
                     FrmKarismaMenu.FrmSetting.Resume(FrmSetting.layerPostMatch);
                     break;
                 case 1:
-                    FrmKarismaMenu.FrmSetting.loadAllStatistic("PENALTY", TeamInfor.homeLogoIn, TeamInfor.awayLogoIn, TeamInfor.homeLogoOut, TeamInfor.awayLogoOut,
+                    string text = $"PENALTY: {Static.numberHomePen} - {Static.numberAwayPen}";
+                    FrmKarismaMenu.FrmSetting.loadAllStatistic(text, TeamInfor.homeLogoIn, TeamInfor.awayLogoIn, TeamInfor.homeLogoOut, TeamInfor.awayLogoOut,
                         Static.numberHomeScore, Static.numberAwayScore, TeamInfor.homeTenNgan, TeamInfor.awayTenNgan);
                     break;
             }
